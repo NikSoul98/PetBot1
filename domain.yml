@@ -1,0 +1,131 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge 
+  - vet_clinics 
+  - pharmaceutical_advices 
+  - on-call_veterinary_clinics 
+  - nearest_vet_clinics 
+  - drugs 
+  - pet_stores 
+  - dog_problem
+  - cat_problem
+
+
+responses:
+  utter_greet:
+  - text: "Hey!I am your personal assistant, for any problem you have with your pet. How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Goodbye! I hope that i helped! See you around, till next time! :) "
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Christos and Nikos, two postgrade students of Aristotle University of Thessaloniki."
+
+  utter_pet_store:
+  - text: "Here are the pet stores in Thessaloniki [Google website](https://www.google.com/search?tbs=lf:1,lf_ui:10&tbm=lcl&sxsrf=APq-WBs-Kj6NF9aoEK1IBfCK1ub0cTb_GQ:1644800213877&q=pet+shop+%CE%B8%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7&rflfq=1&num=10#rlfi=hd:;si:;mv:[[40.614433,22.9865902],[40.5976382,22.948701399999997]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:10/)"
+
+  utter_vet_clinics:
+  - text: Here are the vet clinics 
+
+  utter_on-call_veterinary_clinics:
+  - text: Here are the on-call veterinary-clinics 
+
+  utter_nearest_vet_clinics: 
+  - text: Here are the vet clinics near to you 
+  
+  utter_arthritis:
+  - text: "Here is the drug/pain reliever about your pet's arthritis.
+    Nonsteroidal anti-inflammatory drugs (NSAIDs) play a major role in controlling dog joint pain and inflammation. Prescription medications such Galliprant, Carprofen, and Meloxicam are the safest options for controlling pain and inflammation compared to over-the-counter, non-veterinary products"
+
+    - text: "Did that help you?"
+
+  utter_obesity:
+  - text: "Here is the drug/pain reliever about your pet's obesity.
+    Developed specifically for dogs, Slentrol is the first U.S.-licensed Microsomal Triglyceride Transfer Protein (MTP) inhibitor – a medicine with a unique mode of action that works differently from human weight-loss drugs. Slentrol works by decreasing appetite and food intake."
+
+  - text: "Did that help you?"
+
+  utter_dental_diseases:
+  - text: "Here are solution, to face your pet's dental disease.
+    1)Brush Your Pet’s Teeth
+    First, arguably the most effective, and probably the most difficult for a lot of patients, is brushing teeth. Same as little kids, you can’t tell your dog or your cat not to swallow their toothpaste, so there are lots of brands of fluoride-free toothpaste for pets. It comes in good flavours like poultry and malt, and for the toothbrush, pet stores, or vet clinics, including ourselves, will have pet-specific toothbrushes.
+  
+    2)Use Dental Food
+    The second way to slow down to prevent dental disease in a dog or a cat is with a dental food. There are several good options out there. Hill’s TD Food is currently my favourite. Royal Canin also has a dental food that’s a big help, and even if a pet doesn’t like having their teeth brushed, everybody needs to eat, so if we have a food that does a good job of slowing down and preventing dental disease, it makes a big difference for these patients, and now we’ll give you a demonstration on how the Hill’s TD Food works.
+
+    3)Use a Water Additive to Soften Plaque
+    The third way I’m going to describe to slow down dental disease is with a water additive. There’s several on the market right now, and the one I’m going to bring up by name is Healthy Mouth. It’s an all-natural product, and it’s added to the water for a dog or a cat, and what it does is it weakens that plaque, so the plaque doesn’t stick to the tooth as well. The plaque is slower to build up. There’s not as much plaque available to harden into the tartar that becomes such a challenge. In and of itself, it’s a help. If combined with something like brushing or the dental food, it makes a really big difference, because it’ll act in the locations between teeth that either the dog doesn’t like having brushed, or that they don’t chew on, so yes, the Healthy Mouth, dogs and cats, lots of different flavours. These are a really good add-on for a dental preventative programme.
+
+    4)Use Dental Chews – But, Sparingly
+    Two things to caution you with dental treats. One is their calorie intake. If you’ve got a dog who’s borderline heavy, and they eat a whole bunch of dental treats, that might be enough calories to push them into too heavy, so if you’re giving them a bunch of treats, you’re going to have to cut back some calories somewhere else, decrease the food a little bit."
+
+    - text: "Did that help you?"
+
+  utter_skin_infections:
+  - text: "Here are some pain relievers for your pet's infections.
+    This type of infection may impact a dog's skin or upper respiratory tract, and can be treated using oral antibiotics such as cephalexin, erythromycin or clindamycin. Antibiotic ointments and shampoos can also work.
+    But, if you want to treat your pet's skin infection alone, you can follow these solutions: 
+    Oatmeal Baths. 
+    Steroids. 
+    Exercise and Play. 
+    Medicated Shampoos. 
+    Fat-Free Yogurt. 
+    Diet Alterations. 
+    Vitamin E Oil. 
+    Flea and Tick Treatments"
+
+    - text: "Did that help you?"
+
+  utter_parasites:
+ - text:  "Here are some solutions to disappear your pet's parasite:
+    Treatment depends on the severity of the infection. Veterinarians typically prescribe a medicated shampoo or ointment to kill the fungus in mild cases. Severe cases may need oral medications, in addition to clipping the fur. Roundworms are an extremely common parasite, and again, puppies are most at risk.
+   But, if you want to treat your pet's skin infection alone, you can follow these solutions:Pumpkin Seeds. Pumpkin seeds are an extremely effective deworming agent because they contain an amino acid called cucurbitacin. 
+   Carrots. 
+   Coconut. 
+   Turmeric. 
+   Chamomile.
+   Apple Cider Vinegar."
+
+   - text: "Did that help you?"
+   
+   utter_ear_infections:
+   - text: "Here are some solutions to treat your pet's infections:
+    Your veterinarian will thoroughly clean your pet's ears using a medicated ear cleanser. Your vet may also prescribe an ear cleanser and a topical medication for you to use at home. In severe cases, your vet may prescribe oral antibiotics and anti-inflammatory medications.
+    Next solution it's to buy Surolan :)
+    In other cases if you want to treat your pet's ear infections, here are some solutions:
+    Apple cider vinegar works by killing both yeast and bacteria. Use a mixture of 50% organic apple cider vinegar and 50% water, soak a cotton ball and clean your dog's ears. If you notice your dog in pain or her ears drying out too much, discontinue use and see your vet."
+
+    - text: "Did that help you?"
+
+    utter_dog_problem:
+   - text: "Woof!What is your dog's problem?"
+    
+   utter_feeling_bad_dog_problem:
+   - text: Oh! That's so bad! But,there are a lot of solutions to get over this problem!
+   How could i help you?
+   utter_cat_problem:
+   - text: "Meow!What is your cat's problem?"
+
+    utter_feeling_bad_cat_problem:
+   - text: Oh! That's so bad! But,there are a lot of solutions to get over this problem!
+   How could i help you?
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

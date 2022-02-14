@@ -1,0 +1,247 @@
+﻿version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: dog_problem
+  examples: |
+  - I have an issue with my dog
+  - My dog has a problem 
+  - My dog isn't feeling good
+
+- intent: cat_problem
+  examples: |
+  - I have an issue with my cat
+  - My cat isn't feeling good
+  - Can you help me to make my cat feeling health again?
+
+
+
+- intent: vet_clinics 
+  examples: |
+  - Hello,could you find me vet clinics in Thessaloniki?
+  - I want a vet clinic right now.
+  - i want a vet clinic for my dog.
+  - I want a vet clinic right now for my cat.
+
+- intent: pharmaceutical_advices
+  examples: |
+  - I want pharmaceutical advice for my pet's problem.
+  - Pharmaceutical advice about "disease".
+  - What pharmaceutical advice, could you suggest my about this problem?
+  - With what pharmaceutical advice, could this problem be under exist?
+  - I want fast pharmnaceutical advice for this. 
+
+- intent: on-call_veterinary_clinics
+  examples: |
+   - I want on call veterinary clinic in Thessaloniki.
+   - Are there on call veterinary clinics in Thessaloniki?
+   - Where are on-call veterinary clinics in Thessaloniki?
+   - I want right now on-call veterinary clinic.
+   - I have to go right now my pet in a on-call veterinary clinic in town. Could you find me one?
+   - Could you find me an on call-veterinary clinic?
+
+- intent: nearest_vet_clinics
+  examples: |
+  - I want a vet clinic near to me.
+  - Could you find me a vet clinic near to me?
+  - I need a vet clinic right now.
+  - Where is the nearest vet clinic?
+  - vet clinic near to me.
+  - I have to go to check out my pet. Could you find me a vet clinic near to me?
+  - Find me a vet clinic.
+
+- intent: drugs
+  examples: |
+- What drug could i take for disappear this problem?
+- Could You find me the drug for this problem?
+- What drug could i take for this problem?
+- What effects does this drug have?
+- I want to find me the effectas for this drug.
+- informations for this drug
+- I want informations about this drug
+
+- intent: pet_stores 
+  examples: |
+- I want to find me a pet store
+- Find me a pet store
+- What a pet store have?
+
+intent: problem_dogs
+  examples: |
+    - I would like some tips for my dog
+    - I have a problem with my dog, ​​what to do?
+    - I think is something  wrong with my dog,  what do you suggest to do?
+    - does the dog I am addressing not feel well?
+    - my dog ​​behaves strangely what can i do?
+    - I'm worried about my dog ​​because I think he has something
+    - my dog ​​is very worried about what i can do?
+    - i have a problem with my dog
+    - my dog ​​is very worried about what i can do?
+    - I'm worried about my dog ​​because I think he has something
+    - my dog ​​behaves strangely what can i do?
+    - my Dog I think something is wrong what do you suggest?
+    - does the dog I am addressing not feel well?
+
+
+- intent: arthritis
+  examples: |
+    - has difficulty walking
+    - with difficulty walking
+    - does not walk easily
+    - his joints are swollen
+    - his legs are swollen
+    - Walking stiffly
+    - Lameness in the legs
+    - weakness in the legs
+    - he is not very moving
+     
+- intent: obesity
+  examples: |
+    - it has a rounder face
+    - reluctance to go for walks
+    - excessive panting
+    - gets tired easily
+    - i help it getting in and out of cars
+    - refusal to move 
+    - refusalplay games
+
+- intent: dental_diseases
+  examples: |
+    - my dog's teeth are brown
+    - my dog's teeth are yellow
+    - his teeth are brown
+    - his teeth are yellow
+    - his breath smells bad
+    - my dog's breath smells bad
+    - his breath stinks
+    - my dog's breath stinks
+    - breath stinks
+    - breath smells bad
+    - blood runs from the gums
+    - he has blood in his mouth
+    - he does not have all his teeth
+    - my dog ​​does not have all his teeth
+    - broken teeth
+    - my dog have excessive drooling
+    - there is Blood in his toys
+
+- intent: skin_infections
+  examples: |
+      - my dog has itching
+      - my dog has Hair loss
+      - he has hair loss
+      - my dog has sores
+      - he has sores
+      - has red skin
+      - he is constantly scratched
+      - bites his skin
+      - excessive licking
+      - excessive scratching
+
+
+- intent: parasites
+  examples: |
+      - he is not so active
+      - he has lost weight
+      - he makes vomiting many times
+      - he has diarrhea
+
+
+- intent: ear_infections
+  examples: |
+      - he scratches a specific ear
+      - he has a strange smell in his ear
+      - redness inside the ear
+      - he has yellow discharge 
+      - he has brown discharge 
+      - he has bloody discharge 
+      - he scratches ear
+

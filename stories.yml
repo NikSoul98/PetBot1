@@ -1,0 +1,103 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: vet_clinics
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: vet_clinics
+  - action: utter_vet_clinics
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy 
+
+- story: pharmaceutical_advices
+  steps: 
+   - intent: greet
+   - action: utter_greet
+   - intent: pharmaceutical_advices 
+   - action: utter_pharmaceutical_advices
+   - action: utter_did_that_help 
+   - intent: affirm
+   - action: utter_happy 
+
+- story: on-call_veterinary_clinics
+  steps:
+   - intent: greet 
+   - action: utter_greet 
+   - intent: on-call_veterinary_clinics
+   - action: utter_on-call_veterinary_clinics
+   - action: utter_did_that_help
+   - intent: affirm
+   - action: utter_happy
+
+- story: nearest_vet_clinics
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nearest_vet_clinics
+  - action: utter_nearest_vet_clinics
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: pet_stores
+  steps:
+  - intent: greet
+  - action: utter_greet 
+  - intent: pet_stores
+  - action: utter_pet_stores
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+ - story: dog_problem
+   steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dog_problem
+  - action: utter_dog_problem 
+
+- story:
+  steps:
+- intent: greet
+- action: utter_greet
+- intent: cat_problem
+- action: utter_cat_problem 
+

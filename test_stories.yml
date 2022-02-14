@@ -1,0 +1,140 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      not really
+    intent: deny
+  - action: utter_goodbye
+
+- story: sad path 3
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      very terrible
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      no
+    intent: deny
+  - action: utter_goodbye
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: vet_clinics
+  steps:
+  - user: |
+      I want a vet clinic right now.
+    intent: vet_clinics
+  - action: utter_vet_clinics
+
+- story: pharmaceutical_advices
+  steps:
+  - user: |
+      I want pharmaceutical advice for my pet's problem.
+    intent: pharmaceutical_advices
+  - action: utter_pharmaceutical_advices 
+
+- story: on-call_veterinary_clinics
+  steps:
+  - user: |
+      Could you find me an on call-veterinary clinic?
+    intent: on-call_veterinary_clinics
+  - action: utter_on-call_veterinary_clinics
+
+- story: nearest_vet_clinics
+  steps:
+  - user: |
+      Could you find me a vet clinic near to me?
+    intent: nearest_vet_clinics
+  - action: utter_nearest_vet_clinics
+
+- story: pet_stores
+  steps: 
+  - user: |
+      I want to find me a pet store
+    intent: pet_stores
+  - action: utter_pet_stores 
+
+- story: dog_problem
+  steps: 
+  - user: |
+   I have an issue with my dog
+   intent: dog_problem
+  - action: utter_dog_problem
+
+- story: cat_problem
+  steps:
+  - user: |
+  I have an issue with my cat 
+  intent: cat_problem
+  - action: utter_cat_problem 
